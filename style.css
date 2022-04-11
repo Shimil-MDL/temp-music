@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 @import url('./song-container.css');
 @import url('./player.css');
-*{ 
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -57,11 +57,11 @@ body{
     transition: all 0.3s ease;
 }
 .left .lc .l-item:hover{
-    color: var(--primary-60);    
+    color: var(--primary-60);
 }
 .left .lc .l-item.l-active{
     position: relative;
-    color: var(--primary);    
+    color: var(--primary);
 }
 .left .lc .l-item.l-active::after{
     position: absolute;
@@ -70,7 +70,7 @@ body{
     height: 100%;
     width: 5px;
     border-radius: 5px;
-    background-color: var(--primary);    
+    background-color: var(--primary);
 
 }
 .left .lc .l-item .text{
@@ -187,11 +187,13 @@ body{
     }
     body{
         flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
         overflow: initial;
         gap: 50px;
     }
     .left{
-        flex: 2;
+        width: 100%;
         padding-top: 30px;
         display: flex;
         flex-direction: column;
@@ -229,7 +231,7 @@ body{
     }
     .left .lc .l-item.l-active{
         background: var(--primary);
-        color: var(--bg);    
+        color: var(--bg);
 
     }
     .left .lc .l-item.l-active::after{
@@ -238,7 +240,20 @@ body{
     .mid{
         order: 3;
     }
+    .mid .title{
+      display: none;
+    }
     .right{
         order: 2;
+        padding: 20px 0;
+    }
+
+    .right .a-title{
+        display: none;
+    }
+
+    .right .artists{
+        display: none;
+
     }
 }
