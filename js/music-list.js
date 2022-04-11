@@ -107,7 +107,7 @@ let allMusic = [
     {
       id: 16,
       name: "Oru Nokk",
-      artist: "Arijit Singh",
+      artist: "Karthik",
       img: "./img/oru_nokk.jpg",
       src: "oru nokk",
     },
