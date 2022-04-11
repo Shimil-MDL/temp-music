@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px 15px;
 
     width: 750px;
     max-height: 520px;
@@ -12,12 +12,13 @@
 
 .mid .song-container .song {
     width: 120px;
-    height: 170px;
+    height: 180px;
+    padding-top: 5px;
     border-radius: 10px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 10px;
     
